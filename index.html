@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Tienda Web</title>
-    <link rel="stylesheet" href="css/bebote-kids.css">
+
+    <title>Bebote Kids</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
+
 <body>
 
+    <!-- HEADER -->
     <header>
         <h1>Bebote Kids</h1>
         <p>Indumentaria infantil con estilo</p>
@@ -15,20 +25,31 @@
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#catalogo">Catálogo</a>
-            <a href="#contacto">Contacto</a>
             <a href="#carrito">Carrito</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
+
+        <!-- INICIO -->
         <section id="inicio">
             <h2>Bienvenidos a nuestra tienda</h2>
-            <p>Encontrá ropa cómoda, moderna y adorable para los más pequeños.</p>
-            <button id="btnCatalogo">Ver catálogo</button>
+
+            <p>
+                Encontrá ropa cómoda, moderna y adorable para los más pequeños.
+            </p>
+
+            <button id="btnCatalogo">
+                Ver catálogo
+            </button>
         </section>
 
+        <!-- CATALOGO -->
         <section id="catalogo">
-            <h2>Catálogo de productos</h2>
+
+            <h2>Catálogo de Productos</h2>
 
             <div class="filtros">
                 <button class="filtro" data-categoria="todos">Todos</button>
@@ -37,39 +58,85 @@
                 <button class="filtro" data-categoria="accesorios">Accesorios</button>
             </div>
 
-            <div id="contenedor-productos" class="productos"></div>
+            <div id="contenedor-productos" class="productos">
+
+            </div>
+
         </section>
 
+        <!-- CARRITO -->
         <section id="carrito">
-            <h2>Carrito de compras</h2>
-            <ul id="lista-carrito"></ul>
-            <p>Total: $<span id="total">0</span></p>
+
+            <h2>Carrito de Compras</h2>
+
+            <ul id="lista-carrito">
+
+            </ul>
+
+            <p>
+                Total: $<span id="total">0</span>
+            </p>
+
         </section>
 
+        <!-- CONTACTO -->
         <section id="contacto">
+
             <h2>Contacto</h2>
 
             <form id="formulario">
+
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingrese su nombre"
+                >
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Ingrese su email">
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Ingrese su email"
+                >
 
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escriba su consulta"></textarea>
 
-                <button type="submit">Enviar</button>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    placeholder="Escriba su consulta"
+                ></textarea>
+
+                <button type="submit">
+                    Enviar
+                </button>
+
             </form>
 
             <p id="mensaje-error"></p>
+
         </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Bebote Kids - Todos los derechos reservados</p>
+        <p>
+            © 2026 Bebote Kids - Todos los derechos reservados
+        </p>
     </footer>
-    
-    <script src="JS/bebote-kids.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="JS/productos.js"></script>
+    <script src="JS/carrito.js"></script>
+    <script src="JS/filtros.js"></script>
+    <script src="JS/formulario.js"></script>
+
 </body>
+
 </html>
