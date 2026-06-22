@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Tienda Web</title>
+    <link rel="stylesheet" href="css/bebote-kids.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bebote Kids</h1>
+        <p>Indumentaria infantil con estilo</p>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#carrito">Carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a nuestra tienda</h2>
+            <p>Encontrá ropa cómoda, moderna y adorable para los más pequeños.</p>
+            <button id="btnCatalogo">Ver catálogo</button>
+        </section>
+
+        <section id="catalogo">
+            <h2>Catálogo de productos</h2>
+
+            <div class="filtros">
+                <button class="filtro" data-categoria="todos">Todos</button>
+                <button class="filtro" data-categoria="ninos">Niños</button>
+                <button class="filtro" data-categoria="ninas">Niñas</button>
+                <button class="filtro" data-categoria="accesorios">Accesorios</button>
+            </div>
+
+            <div id="contenedor-productos" class="productos"></div>
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito de compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p>Total: $<span id="total">0</span></p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <form id="formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su email">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba su consulta"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p id="mensaje-error"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Bebote Kids - Todos los derechos reservados</p>
+    </footer>
+    
+    <script src="JS/bebote-kids.js"></script>
+</body>
+</html>
