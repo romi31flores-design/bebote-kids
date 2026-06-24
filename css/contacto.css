@@ -1,12 +1,36 @@
-/* CONTACTO */
+/* =====================================
+    SECCION CONTACTO
+===================================== */
+
+#contacto {
+    background-color: #f8efe6;
+}
+
+/* =====================================
+    FORMULARIO
+===================================== */
 
 form {
     max-width: 500px;
     margin: auto;
+
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
+/* =====================================
+    ETIQUETAS DEL FORMULARIO
+===================================== */
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+/* =====================================
+    CAMPOS DEL FORMULARIO
+===================================== */
 
 input,
 textarea {
@@ -15,9 +39,17 @@ textarea {
     border-radius: 10px;
 }
 
+/* =====================================
+    AREA DE TEXTO
+===================================== */
+
 textarea {
     min-height: 120px;
 }
+
+/* =====================================
+    MENSAJE DE VALIDACION
+===================================== */
 
 #mensaje-error {
     margin-top: 15px;
