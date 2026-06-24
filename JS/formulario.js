@@ -8,7 +8,7 @@ const mensajeError = document.querySelector("#mensaje-error");
 
 
 // =====================================
-// EVENTO SUBMIT DEL FORMULARIO
+// EVENTO SUBMIT DEL FORMULARIO EL USUARIO INTENTA ENVIAR UN FORMULARIO 
 // =====================================
 
 formulario.addEventListener("submit", function(evento) {
