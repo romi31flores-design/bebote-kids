@@ -1,0 +1,26 @@
+/* CONTACTO */
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #c19a6b;
+    border-radius: 10px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+#mensaje-error {
+    margin-top: 15px;
+    font-weight: bold;
+    color: red;
+}

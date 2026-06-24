@@ -1,0 +1,24 @@
+/* CARRITO */
+
+#carrito {
+    background-color: #ffffff;
+}
+
+#lista-carrito {
+    list-style: none;
+    margin: 20px 0;
+}
+
+#lista-carrito li {
+    background-color: #f8efe6;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+#total {
+    font-weight: bold;
+    color: #9b744d;
+    font-size: 22px;
+}
