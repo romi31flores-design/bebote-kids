@@ -2,12 +2,12 @@
 <html lang="es">
 
 <head>
+    <!-- CONFIGURACIÓN GENERAL DEL DOCUMENTO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Bebote Kids</title>
 
-    <!-- CSS -->
+    <!-- ARCHIVOS CSS SEPARADOS POR SECCIÓN -->
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/catalogo.css">
@@ -17,11 +17,12 @@
 
 <body>
 
-    <!-- HEADER -->
+    <!-- HEADER: encabezado principal de la página -->
     <header>
         <h1>Bebote Kids</h1>
         <p>Indumentaria infantil con estilo</p>
 
+        <!-- NAV: menú de navegación interna -->
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#catalogo">Catálogo</a>
@@ -30,108 +31,76 @@
         </nav>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL -->
+    <!-- MAIN: contenido principal del sitio -->
     <main>
 
-        <!-- INICIO -->
+        <!-- SECCIÓN INICIO: presentación de la tienda -->
         <section id="inicio">
             <h2>Bienvenidos a nuestra tienda</h2>
+            <p>Encontrá ropa cómoda, moderna y adorable para los más pequeños.</p>
 
-            <p>
-                Encontrá ropa cómoda, moderna y adorable para los más pequeños.
-            </p>
-
-            <button id="btnCatalogo">
-                Ver catálogo
-            </button>
+            <!-- Botón que luego JS usa para bajar al catálogo -->
+            <button id="btnCatalogo">Ver catálogo</button>
         </section>
 
-        <!-- CATALOGO -->
+        <!-- SECCIÓN CATÁLOGO: productos generados con JavaScript -->
         <section id="catalogo">
-
             <h2>Catálogo de Productos</h2>
 
+            <!-- Botones de filtro por categoría -->
             <div class="filtros">
-                <button class="filtro" data-categoria="todos">Todos</button>
-                <button class="filtro" data-categoria="ninos">Niños</button>
-                <button class="filtro" data-categoria="ninas">Niñas</button>
-                <button class="filtro" data-categoria="accesorios">Accesorios</button>
+                <button id="btnTodos">Todos</button>
+                <button id="btnNinos">Niños</button>
+                <button id="btnNinas">Niñas</button>
+                <button id="btnAccesorios">Accesorios</button>
             </div>
 
-            <div id="contenedor-productos" class="productos">
-
-            </div>
-
+            <!-- Acá JavaScript va a insertar las tarjetas de productos usando DOM -->
+            <div id="contenedor-productos" class="productos"></div>
         </section>
 
-        <!-- CARRITO -->
+        <!-- SECCIÓN CARRITO: lista de productos agregados -->
         <section id="carrito">
-
             <h2>Carrito de Compras</h2>
 
-            <ul id="lista-carrito">
+            <!-- Lista que JS modifica cuando se agregan productos -->
+            <ul id="lista-carrito"></ul>
 
-            </ul>
-
-            <p>
-                Total: $<span id="total">0</span>
-            </p>
-
+            <!-- Total actualizado con JavaScript -->
+            <p>Total: $<span id="total">0</span></p>
         </section>
 
-        <!-- CONTACTO -->
+        <!-- SECCIÓN CONTACTO: formulario para consultas -->
         <section id="contacto">
-
             <h2>Contacto</h2>
 
+            <!-- Formulario que luego se valida con JavaScript -->
             <form id="formulario">
 
                 <label for="nombre">Nombre</label>
-
-                <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    placeholder="Ingrese su nombre"
-                >
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
 
                 <label for="email">Email</label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Ingrese su email"
-                >
+                <input type="email" id="email" name="email" placeholder="Ingrese su email">
 
                 <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba su consulta"></textarea>
 
-                <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    placeholder="Escriba su consulta"
-                ></textarea>
-
-                <button type="submit">
-                    Enviar
-                </button>
-
+                <button type="submit">Enviar</button>
             </form>
 
+            <!-- Mensaje de error o confirmación del formulario -->
             <p id="mensaje-error"></p>
-
         </section>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER: información final de la página -->
     <footer>
-        <p>
-            © 2026 Bebote Kids - Todos los derechos reservados
-        </p>
+        <p>© 2026 Bebote Kids - Todos los derechos reservados</p>
     </footer>
 
-    <!-- JAVASCRIPT -->
+    <!-- ARCHIVOS JAVASCRIPT SEPARADOS POR RESPONSABILIDAD -->
     <script src="JS/productos.js"></script>
     <script src="JS/carrito.js"></script>
     <script src="JS/filtros.js"></script>
