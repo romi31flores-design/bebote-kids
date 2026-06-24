@@ -81,22 +81,4 @@ function actualizarCarrito() {
     totalCarrito.textContent = total;
 }
 
-const botonesFiltro = document.querySelectorAll(".filtro");
-
-botonesFiltro.forEach((boton) => {
-    boton.addEventListener("click", () => {
-        const categoria = boton.dataset.categoria;
-        mostrarProductos(categoria);
-    });
-});
-
-const btnCatalogo = document.querySelector("#btnCatalogo");
-
-btnCatalogo.addEventListener("click", () => {
-    document.querySelector("#catalogo").scrollIntoView({
-        behavior: "smooth"
-    });
-});
-
-mostrarProductos("todos");
 
