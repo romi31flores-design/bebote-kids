@@ -1,3 +1,7 @@
+// ARRAY DE PRODUCTOS
+// Un array es una lista ordenada.
+// Cada producto es un objeto con propiedades: nombre, precio, categoria e imagen.
+
 const productos = [
     {
         nombre: "Conjunto Casual",
